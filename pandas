@@ -1,0 +1,17 @@
+data=pd.read_csv('2014.csv', dtype={'会员卡号': str})
+文件中类型不一样，可以指定类型
+
+
+import pandas as pd
+data=pd.read_csv("数据.csv",engine='python',encoding='utf-8')
+print(data)
+ 直接读有中文名的csv
+ 
+ 一列会员 一列物品
+ 会员1    篮球
+ 会员2    足球  
+ 会员1    乒乓球
+ data=dict(df.groupby('会员卡号')['中类描述'].apply(lambda x: set(x.tolist())))
+ 
+ 会员1：{‘篮球’，‘足球’，‘乒乓球’}
+ 
