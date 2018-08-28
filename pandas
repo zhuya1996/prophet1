@@ -15,3 +15,10 @@ print(data)
  
  会员1：{‘篮球’，‘足球’，‘乒乓球’}
  
+ 
+ 
+ 
+ 筛选列中指定值的行
+ data=data.loc[data['index']=='男']
+data=data.loc[data['index'].isin(['男'])]
+ 
