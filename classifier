@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Wed Nov  8 23:46:40 2017
 
-@author: BRYAN
 """
 import time
 from sklearn import linear_model
