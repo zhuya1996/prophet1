@@ -22,3 +22,8 @@ print(data)
  data=data.loc[data['index']=='男']
 data=data.loc[data['index'].isin(['男'])]
  
+data['tmp']=data['经度'].astype(str)+","+data['纬度'].astype(str)
+print(data)
+map={'30.942,121.085':"北京","67.34,134.976":'上海',"21.034,53.434":"四川","90.3223,67.3223":"广西","232.1121,222.43":"云南"}
+data['城市']=data['tmp'].map(map)
+print(data)
