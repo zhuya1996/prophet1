@@ -30,3 +30,9 @@ print(data)
 
 #删除掉有空值的每行
 df3.dropna(axis=0, how='any', inplace=True)
+
+
+
+# 如果直接运行.py文件，则__name__ == '__main__'
+# 如果是引入.py文件，则__name__　＝＝　文件名
+if __name__ == '__main__':
